@@ -1,16 +1,30 @@
-# datathon-2026-2phuthon
+# 📊 Dự báo Doanh thu Bán lẻ - Datathon 2026
 
-Datathon 2026 — **The Gridbreakers**: Revenue Forecasting for an E-commerce Fashion Company in Vietnam.
+## 🚀 Giới thiệu
+Dự án tập trung vào việc dự báo doanh thu và giá vốn (Revenue & COGS) cho chuỗi bán lẻ tại Việt Nam. Cách tiếp cận của nhóm kết hợp giữa phân tích kỹ thuật và hiểu biết về đặc thù thị trường nội địa (Lễ Tết, tâm lý mua sắm).
 
-## Project goal
+---
 
-- Build a robust time-series model to forecast daily **Revenue** and **COGS**.
-- Produce a submission file matching `data/raw/sample_submission.csv` format.
-- Keep the workflow reproducible and avoid data leakage.
+## 📁 Cấu trúc thư mục
 
-## Structure
+```text
+datathon-2026-retail-forecasting/
+├── README.md               <- Trang giới thiệu tổng quan (Linh hồn dự án)
+├── requirements.txt        <- Danh sách các thư viện Python (xgboost, pandas,...)
+├── reports/                <- Chứa báo cáo PDF 4 trang và các ảnh Dashboard
+│   ├── Final_Report.pdf
+│   └── Dashboard_Screenshots/
+├── notebooks/              <- Chứa các file phân tích
+│   ├── 1_Multiple_Choice.ipynb
+│   └── 2_EDA_Analysis.ipynb
+├── scripts/                <- Chứa mã nguồn dự báo chính
+│   └── 3_XGBoost_V5_Model.py
+├── submissions/            <- Chứa file kết quả nộp Kaggle
+│   └── xgboost_v5_tet_log.csv
+└── data/                   <- (Tùy chọn) Chứa file promotions.csv
+```
 
-## Quickstart
+## Cách làm
 
 1. Install dependencies
 
@@ -34,7 +48,9 @@ python -m src.models.predict
 
 This writes `outputs/submissions/submission.csv`.
 
-## Notes
+## 🛫 Phân công công việc
 
-- In the current dataset snapshot, `sales.csv` ends at **2022-12-31**, while `sample_submission.csv` contains future dates (2023+).
-- The provided baseline uses **calendar features + lag/rolling features** and forecasts future dates **autoregressively**.
+- Thành viên 1: Viết code .ipynb để đọc dữ liệu và trả lời các câu hỏi trắc nghiệm
+- Thành viên 2: Xây dựng PowerBI để làm EDA
+- Thành viên 3: Đọc insight từ PBI để viết LaTex (phối hợp với thành viên 2)
+- Thành viên 4: Xây dựng code dự đoán
