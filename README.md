@@ -1,31 +1,40 @@
 # datathon-2026-2phuthon
 
-Bài làm nhóm Datathon 2026
-🚀 Giới thiệu
-Dự án tập trung vào việc dự báo doanh thu và giá vốn (Revenue & COGS) cho chuỗi bán lẻ tại Việt Nam. Cách tiếp cận của nhóm kết hợp giữa phân tích kỹ thuật và hiểu biết về đặc thù thị trường nội địa.
+Datathon 2026 — **The Gridbreakers**: Revenue Forecasting for an E-commerce Fashion Company in Vietnam.
 
-📁 Cấu trúc thư mục
-reports/: Báo cáo khoa học 4 trang và hình ảnh trực quan.
+## Project goal
 
-notebooks/: Lời giải phần trắc nghiệm và phân tích EDA.
+- Build a robust time-series model to forecast daily **Revenue** and **COGS**.
+- Produce a submission file matching `data/raw/sample_submission.csv` format.
+- Keep the workflow reproducible and avoid data leakage.
 
-scripts/: Mã nguồn mô hình XGBoost V5 (Log-transform, Lễ Tết).
+## Structure
 
-submissions/: File kết quả dự báo 548 ngày.
+## Quickstart
 
-💡 Điểm nổi bật trong mô hình
-Xử lý Lễ Tết: Neo dữ liệu theo ngày Tết Nguyên Đán thay vì ngày dương lịch cố định.
+1. Install dependencies
 
-Hiệu ứng tâm lý: Tích hợp biến "Ngày nhận lương" và "Ngày đôi" (Double Days).
+```bash
+pip install -r requirements.txt
+```
 
-Kỹ thuật: Sử dụng Log-transformation để xử lý xu hướng tăng trưởng và mã hóa chu kỳ lượng giác (sin/cos).
+2. Train baseline models (Revenue + COGS)
 
-🛠 Hướng dẫn chạy code
-Cài đặt thư viện: pip install -r requirements.txt
+```bash
+python -m src.models.train
+```
 
-Chạy dự báo: python scripts/3_XGBoost_V5_Model.py
+This writes `outputs/models/model_package.joblib`.
 
-👥 Phân công nhiệm vụ
-Thành viên A: Xây dựng Dashboard Power BI và DAX logic.
+3. Generate submission
 
-Thành viên B: Phát triển mô hình Machine Learning và Feature Engineering.
+```bash
+python -m src.models.predict
+```
+
+This writes `outputs/submissions/submission.csv`.
+
+## Notes
+
+- In the current dataset snapshot, `sales.csv` ends at **2022-12-31**, while `sample_submission.csv` contains future dates (2023+).
+- The provided baseline uses **calendar features + lag/rolling features** and forecasts future dates **autoregressively**.
