@@ -73,10 +73,3 @@ part3_forecasting/outputs/submission.csv
 ```
 
 The included submission file has Kaggle score reference `669191.89991` as reported after the final run.
-
-## Compliance Notes
-
-- All model features are generated from the provided `Raw Data/*.csv` files.
-- `sample_submission.csv` is used only for `Date`, row order, and schema validation.
-- The forecasting notebooks include rolling-origin validation, leakage checks, model comparison, COGS ratio handling, and SHAP/feature-importance explainability.
-- No helper output artifact, old submission blend, Kaggle token, or leaderboard-derived target value is used as model input.
