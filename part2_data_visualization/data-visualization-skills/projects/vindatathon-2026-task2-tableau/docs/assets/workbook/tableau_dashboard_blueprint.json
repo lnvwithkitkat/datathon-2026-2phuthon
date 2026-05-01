@@ -1,0 +1,238 @@
+{
+  "project": "vindatathon-2026-task2-tableau",
+  "title_vi": "VinDatathon 2026 - Task 2: Dashboard CEO cho TMĐT thời trang",
+  "visualization_tool": "Tableau Desktop override",
+  "deliverable_mode": "File-out",
+  "data_sources": [
+    "orders_enriched.csv",
+    "order_items_enriched.csv",
+    "daily_kpi.csv",
+    "inventory_monthly.csv",
+    "growth_forecast_monthly.csv",
+    "seasonality_indices.csv",
+    "predictive_signals.csv",
+    "recommendations.csv",
+    "dashboard_kpis.csv",
+    "data_dictionary.csv",
+    "source_manifest.csv"
+  ],
+  "global_filters": [
+    "Date range",
+    "ship_region",
+    "dominant_category / category",
+    "dominant_segment / segment",
+    "order_source",
+    "device_type",
+    "payment_method",
+    "age_group"
+  ],
+  "dashboards": [
+    {
+      "name": "Executive Overview",
+      "story_question": "CEO cần hành động ở đâu để tăng trưởng có lợi nhuận?",
+      "primary_sources": [
+        "dashboard_kpis.csv",
+        "daily_kpi.csv",
+        "recommendations.csv"
+      ],
+      "worksheets": [
+        "KPI strip: Revenue, Gross Margin %, Orders, Cancel Rate, Return Rate, Promo Margin Gap",
+        "Monthly revenue and margin trend with forecast overlay",
+        "Revenue and margin by region/category/segment",
+        "Top recommended actions by priority and estimated impact"
+      ],
+      "rubric_level": [
+        "Descriptive",
+        "Diagnostic",
+        "Predictive",
+        "Prescriptive"
+      ]
+    },
+    {
+      "name": "Growth Forecast & Seasonality",
+      "story_question": "Điều gì có khả năng xảy ra tiếp theo nếu xu hướng lịch sử tiếp diễn?",
+      "primary_sources": [
+        "growth_forecast_monthly.csv",
+        "seasonality_indices.csv",
+        "daily_kpi.csv"
+      ],
+      "worksheets": [
+        "Historical vs six-month predictive EDA forecast with confidence band",
+        "Month-of-year peak/soft seasonality index",
+        "Weekday revenue index",
+        "Traffic sessions vs revenue leading-indicator scatter"
+      ],
+      "rubric_level": [
+        "Predictive",
+        "Prescriptive"
+      ]
+    },
+    {
+      "name": "Profit & Promotion Leakage",
+      "story_question": "Khuyến mãi đang tạo tăng trưởng hay phá biên lợi nhuận?",
+      "primary_sources": [
+        "order_items_enriched.csv",
+        "predictive_signals.csv",
+        "recommendations.csv"
+      ],
+      "worksheets": [
+        "Promo vs no-promo margin % by category and segment",
+        "Discount rate vs margin scatter",
+        "Revenue share vs margin bubble by category/segment",
+        "Promotion margin risk action table"
+      ],
+      "rubric_level": [
+        "Diagnostic",
+        "Prescriptive"
+      ]
+    },
+    {
+      "name": "Customer, Channel & Payment Risk",
+      "story_question": "Kênh, thiết bị, và phương thức thanh toán nào tạo doanh thu chất lượng thấp?",
+      "primary_sources": [
+        "orders_enriched.csv",
+        "daily_kpi.csv",
+        "predictive_signals.csv",
+        "recommendations.csv"
+      ],
+      "worksheets": [
+        "Payment risk bar: cancellation + return-record rate",
+        "Channel efficiency: revenue per session vs order risk",
+        "Device/source mix and AOV",
+        "Customer age/acquisition cohort value and risk"
+      ],
+      "rubric_level": [
+        "Diagnostic",
+        "Predictive",
+        "Prescriptive"
+      ]
+    },
+    {
+      "name": "Returns, Reviews & Fulfillment",
+      "story_question": "Trải nghiệm khách hàng đang rò rỉ doanh thu ở đâu?",
+      "primary_sources": [
+        "order_items_enriched.csv",
+        "orders_enriched.csv",
+        "recommendations.csv"
+      ],
+      "worksheets": [
+        "Return reason distribution and refund impact",
+        "Wrong-size heatmap by category and size",
+        "Fulfillment days vs rating / return likelihood",
+        "Return-risk product/category detail table"
+      ],
+      "rubric_level": [
+        "Diagnostic",
+        "Predictive",
+        "Prescriptive"
+      ]
+    },
+    {
+      "name": "Inventory Actions",
+      "story_question": "Sản phẩm nào cần bổ sung, giảm nhập, hoặc markdown?",
+      "primary_sources": [
+        "inventory_monthly.csv",
+        "predictive_signals.csv",
+        "recommendations.csv"
+      ],
+      "worksheets": [
+        "Stockout vs overstock quadrant",
+        "Product replenishment priority table",
+        "Category trend: stockout days, fill rate, sell-through",
+        "Markdown / reduce receipts action table"
+      ],
+      "rubric_level": [
+        "Predictive",
+        "Prescriptive"
+      ]
+    }
+  ],
+  "dashboard_actions": [
+    {
+      "action_name": "Global region/category/segment filter",
+      "type": "Filter",
+      "source_dashboard": "Executive Overview",
+      "source_sheets": [
+        "Revenue and margin by region/category/segment"
+      ],
+      "target_dashboards": [
+        "Profit & Promotion Leakage",
+        "Customer, Channel & Payment Risk",
+        "Returns, Reviews & Fulfillment",
+        "Inventory Actions"
+      ],
+      "run_action_on": "Select",
+      "clearing_selection": "Show all values"
+    },
+    {
+      "action_name": "Cross-dashboard highlight",
+      "type": "Highlight",
+      "source_dashboards": [
+        "Profit & Promotion Leakage",
+        "Customer, Channel & Payment Risk",
+        "Returns, Reviews & Fulfillment",
+        "Inventory Actions"
+      ],
+      "fields": [
+        "category",
+        "segment",
+        "payment_method"
+      ],
+      "run_action_on": "Hover"
+    },
+    {
+      "action_name": "Category drill to product detail",
+      "type": "Filter",
+      "source_dashboard": "Profit & Promotion Leakage",
+      "target_dashboard": "Inventory Actions",
+      "target_filters": [
+        "category",
+        "segment"
+      ],
+      "run_action_on": "Select",
+      "clearing_selection": "Show all values"
+    },
+    {
+      "action_name": "Return reason focus",
+      "type": "Highlight",
+      "source_dashboard": "Returns, Reviews & Fulfillment",
+      "source_sheet": "Return reason distribution and refund impact",
+      "target_sheets": [
+        "Wrong-size heatmap by category and size",
+        "Return-risk product/category detail table"
+      ],
+      "fields": [
+        "top_return_reason",
+        "category",
+        "size"
+      ],
+      "run_action_on": "Select"
+    },
+    {
+      "action_name": "Inventory quadrant filter",
+      "type": "Filter",
+      "source_dashboard": "Inventory Actions",
+      "source_sheet": "Stockout vs overstock quadrant",
+      "target_sheets": [
+        "Product replenishment priority table",
+        "Markdown / reduce receipts action table"
+      ],
+      "fields": [
+        "inventory_quadrant",
+        "category",
+        "segment"
+      ],
+      "run_action_on": "Select",
+      "clearing_selection": "Show all values"
+    },
+    {
+      "action_name": "Reset presentation state",
+      "type": "Reset pattern",
+      "implementation": "Set every filter/highlight action to 'Clearing the selection: Show all values' and expose Tableau's Revert control during presentation."
+    }
+  ],
+  "tableau_status": {
+    "status": "desktop_gui_available_cli_export_blocked",
+    "detail": "tableau.com returned: Unable to verify license. Please activate the product."
+  }
+}

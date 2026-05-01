@@ -1,0 +1,19 @@
+{
+  "project": "vindatathon-2026-task2-tableau",
+  "source_dir": "D:\\Code\\Coding\\data-visualization-skills\\projects\\data",
+  "export_dir": "D:\\Code\\Coding\\data-visualization-skills\\projects\\vindatathon-2026-task2-tableau\\docs\\assets\\exports\\tableau",
+  "outputs": {
+    "orders_enriched": "docs\\assets\\exports\\tableau\\orders_enriched.csv",
+    "order_items_enriched": "docs\\assets\\exports\\tableau\\order_items_enriched.csv",
+    "daily_kpi": "docs\\assets\\exports\\tableau\\daily_kpi.csv",
+    "inventory_monthly": "docs\\assets\\exports\\tableau\\inventory_monthly.csv",
+    "growth_forecast_monthly": "docs\\assets\\exports\\tableau\\growth_forecast_monthly.csv",
+    "seasonality_indices": "docs\\assets\\exports\\tableau\\seasonality_indices.csv",
+    "predictive_signals": "docs\\assets\\exports\\tableau\\predictive_signals.csv",
+    "recommendations": "docs\\assets\\exports\\tableau\\recommendations.csv",
+    "dashboard_kpis": "docs\\assets\\exports\\tableau\\dashboard_kpis.csv"
+  },
+  "data_dictionary_rows": 246,
+  "source_manifest_rows": 16,
+  "validation_report": "docs\\data-preparation-validation.md"
+}

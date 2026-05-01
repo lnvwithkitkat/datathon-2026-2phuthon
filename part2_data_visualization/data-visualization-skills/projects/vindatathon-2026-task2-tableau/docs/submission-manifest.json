@@ -1,0 +1,96 @@
+{
+  "project": "vindatathon-2026-task2-tableau",
+  "purpose": "Manual GitHub submission manifest",
+  "recommended_commit_root": "projects/vindatathon-2026-task2-tableau/",
+  "commit_groups": [
+    {
+      "name": "Project root metadata",
+      "paths": [
+        "README.md",
+        ".gitignore"
+      ]
+    },
+    {
+      "name": "Project scripts",
+      "paths": [
+        "scripts/prepare_tableau_data.py",
+        "scripts/build_tableau_fileout.py",
+        "scripts/generate_preview_exports.py",
+        "scripts/generate_latex_figure_pack.py"
+      ]
+    },
+    {
+      "name": "Project documentation",
+      "paths": [
+        "docs/*.md",
+        "docs/submission-manifest.json"
+      ]
+    },
+    {
+      "name": "Final rendered figures",
+      "paths": [
+        "docs/assets/figures/latex/*.png",
+        "docs/assets/figures/latex/*.pdf",
+        "docs/assets/figures/latex/*.tex",
+        "docs/assets/figures/latex/*.json",
+        "docs/assets/figures/latex/*.zip"
+      ]
+    },
+    {
+      "name": "Small prepared extracts and metadata",
+      "paths": [
+        "docs/assets/exports/tableau/README.md",
+        "docs/assets/exports/tableau/build_summary.json",
+        "docs/assets/exports/tableau/dashboard_kpis.csv",
+        "docs/assets/exports/tableau/source_manifest.csv",
+        "docs/assets/exports/tableau/seasonality_indices.csv",
+        "docs/assets/exports/tableau/recommendations.csv",
+        "docs/assets/exports/tableau/predictive_signals.csv",
+        "docs/assets/exports/tableau/data_dictionary.csv",
+        "docs/assets/exports/tableau/orders_enriched_missingness.csv",
+        "docs/assets/exports/tableau/order_items_enriched_missingness.csv",
+        "docs/assets/exports/tableau/growth_forecast_monthly.csv",
+        "docs/assets/exports/tableau/daily_kpi.csv",
+        "docs/assets/exports/tableau/inventory_monthly.csv"
+      ]
+    },
+    {
+      "name": "Workbook and BI build helpers",
+      "paths": [
+        "docs/assets/workbook/README_TABLEAU_BUILD.md",
+        "docs/assets/workbook/tableau_calculated_fields.md",
+        "docs/assets/workbook/tableau_dashboard_blueprint.json",
+        "docs/assets/workbook/twbx_package_manifest.json",
+        "docs/assets/powerbi/README.md"
+      ]
+    }
+  ],
+  "do_not_commit_without_lfs_or_release_assets": [
+    {
+      "path": "docs/assets/exports/tableau/orders_enriched.csv",
+      "reason": "Generated extract, approximately 280.9 MB"
+    },
+    {
+      "path": "docs/assets/exports/tableau/order_items_enriched.csv",
+      "reason": "Generated extract, approximately 323.1 MB"
+    },
+    {
+      "path": "docs/assets/workbook/VinDatathon_Task2_Tableau_Fileout_Package.zip",
+      "reason": "Generated Tableau file-out package, approximately 141.7 MB"
+    },
+    {
+      "path": "docs/assets/powerbi/*.pbix",
+      "reason": "Binary Power BI report files can become large"
+    },
+    {
+      "path": "docs/assets/workbook/*.twbx",
+      "reason": "Binary Tableau workbook packages can become large"
+    }
+  ],
+  "guardrails": [
+    "Do not stage top-level docs/ or plans/ paths.",
+    "Do not use sales_test.csv for Part 2.",
+    "Do not analyze sample_submission.csv or baseline.ipynb.",
+    "Predictive figures are EDA signals from historical data, not forecasting submission artifacts."
+  ]
+}

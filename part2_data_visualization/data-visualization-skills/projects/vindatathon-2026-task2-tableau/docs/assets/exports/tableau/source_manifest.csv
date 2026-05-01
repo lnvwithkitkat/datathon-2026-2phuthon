@@ -1,0 +1,17 @@
+﻿source_name,filename,status,bytes
+customers,customers.csv,used,7079679.0
+geography,geography.csv,used,1402281.0
+inventory,inventory.csv,used,5668678.0
+order_items,order_items.csv,used,23942735.0
+orders,orders.csv,used,45963232.0
+payments,payments.csv,used,18383288.0
+products,products.csv,used,195223.0
+promotions,promotions.csv,used,4444.0
+returns,returns.csv,used,2281456.0
+reviews,reviews.csv,used,6791414.0
+sales,sales.csv,used,129634.0
+shipments,shipments.csv,used,19756082.0
+web_traffic,web_traffic.csv,used,208722.0
+sample_submission,sample_submission.csv,excluded_by_scope,18530.0
+baseline,baseline.ipynb,excluded_by_scope,8608.0
+sales_test,sales_test.csv,excluded_by_scope,

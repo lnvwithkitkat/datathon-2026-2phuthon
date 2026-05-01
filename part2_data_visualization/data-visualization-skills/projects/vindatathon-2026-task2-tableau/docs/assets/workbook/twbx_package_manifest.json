@@ -1,0 +1,22 @@
+{
+  "package_type": "Tableau file-out build package",
+  "twbx_final_expected_name": "VinDatathon_Task2_Tableau.twbx",
+  "automated_twbx_verified": false,
+  "reason": "Tableau Desktop GUI is available, but local Desktop CLI/export automation is not available for this file-out project.",
+  "data_sources": [
+    "data/orders_enriched.csv",
+    "data/order_items_enriched.csv",
+    "data/daily_kpi.csv",
+    "data/inventory_monthly.csv",
+    "data/growth_forecast_monthly.csv",
+    "data/seasonality_indices.csv",
+    "data/predictive_signals.csv",
+    "data/recommendations.csv",
+    "data/dashboard_kpis.csv",
+    "data/data_dictionary.csv",
+    "data/source_manifest.csv"
+  ],
+  "blueprint": "tableau_dashboard_blueprint.json",
+  "calculated_fields": "tableau_calculated_fields.md",
+  "build_readme": "README_TABLEAU_BUILD.md"
+}

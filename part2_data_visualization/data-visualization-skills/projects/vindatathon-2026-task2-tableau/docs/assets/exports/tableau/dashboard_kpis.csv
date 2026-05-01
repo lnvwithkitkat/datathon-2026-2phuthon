@@ -1,0 +1,14 @@
+﻿kpi_name,kpi_value,metric_definition
+Revenue,16430476585.529999,Historical sales.csv revenue
+Gross margin,2267026066.3600006,Revenue minus COGS from sales.csv
+Gross margin %,0.1379768903573087,Gross margin divided by revenue
+Orders,646945.0,Total orders
+Customers,90246.0,Customers with at least one order
+Cancel rate,0.09191198633577816,Cancelled orders divided by all orders
+Return-record rate,0.05574198734050035,Orders with at least one return record
+COD risk rate,0.24901480125360725,COD cancel plus return rate
+Promo margin %,0.013248368764128524,Line margin percent for promoted items
+No-promo margin %,0.19963688851077993,Line margin percent for non-promoted items
+Inventory stockout share,0.6734111242053546,Share of product-month rows with stockout flag
+Inventory overstock share,0.7625607914087008,Share of product-month rows with overstock flag
+Web sessions,91452537.0,Total web sessions

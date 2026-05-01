@@ -1,0 +1,66 @@
+table_name,column_name,blank_count,blank_pct,row_count,null_policy,status
+order_items_enriched,promo_id_2,714463,0.9997117546724428,714669,Expected near-null because second stacked promotions are rare; use has_second_promo for filtering or hide in BI.,Expected sparse event/metadata field
+order_items_enriched,applicable_category,684814,0.9582254162416447,714669,Expected mostly null because most promotions are global and have blank applicable_category in source.,Expected sparse event/metadata field
+order_items_enriched,first_return_date,674730,0.9441153876829693,714669,Expected null when line item has no return record; keep as null date.,Expected sparse event/metadata field
+order_items_enriched,top_return_reason,674730,0.9441153876829693,714669,Expected null when line item has no return record; use No return record display label in BI visuals.,Expected sparse event/metadata field
+order_items_enriched,avg_rating,601116,0.8411110598053084,714669,Expected null when line item has no review; keep numeric null or use No review label separately.,Expected sparse event/metadata field
+order_items_enriched,first_review_date,601116,0.8411110598053084,714669,Expected null when line item has no review; keep as null date.,Expected sparse event/metadata field
+order_items_enriched,min_rating,601116,0.8411110598053084,714669,Expected null when line item has no review; keep numeric null.,Expected sparse event/metadata field
+order_items_enriched,top_review_title,601116,0.8411110598053084,714669,Expected null when line item has no review.,Expected sparse event/metadata field
+order_items_enriched,discount_value,438353,0.6133650683043479,714669,Expected null when line item has no promotion metadata.,Expected sparse event/metadata field
+order_items_enriched,end_date,438353,0.6133650683043479,714669,Expected null when line item has no promotion metadata; keep as null date.,Expected sparse event/metadata field
+order_items_enriched,min_order_value,438353,0.6133650683043479,714669,Expected null when line item has no promotion metadata.,Expected sparse event/metadata field
+order_items_enriched,promo_channel,438353,0.6133650683043479,714669,Expected null when line item has no promotion metadata.,Expected sparse event/metadata field
+order_items_enriched,promo_id,438353,0.6133650683043479,714669,Expected null when line item has no promotion; use has_promo for filtering.,Expected sparse event/metadata field
+order_items_enriched,promo_name,438353,0.6133650683043479,714669,Expected null when line item has no promotion; use No promotion display label if needed.,Expected sparse event/metadata field
+order_items_enriched,promo_type,438353,0.6133650683043479,714669,Expected null when line item has no promotion.,Expected sparse event/metadata field
+order_items_enriched,stackable_flag,438353,0.6133650683043479,714669,Expected null when line item has no promotion metadata.,Expected sparse event/metadata field
+order_items_enriched,start_date,438353,0.6133650683043479,714669,Expected null when line item has no promotion metadata; keep as null date.,Expected sparse event/metadata field
+order_items_enriched,delivery_days,89287,0.12493476000777982,714669,Expected null when no shipment row exists; keep numeric null.,Expected sparse event/metadata field
+order_items_enriched,fulfillment_days,89287,0.12493476000777982,714669,Expected null when no shipment row exists; keep numeric null.,Expected sparse event/metadata field
+order_items_enriched,late_fulfillment_flag,89287,0.12493476000777982,714669,Expected null when no shipment row exists; use No shipment / not applicable label for visuals.,Expected sparse event/metadata field
+order_items_enriched,shipping_fee,89287,0.12493476000777982,714669,Expected null when no shipment row exists for the order; keep numeric null or coalesce only for display.,Expected sparse event/metadata field
+order_items_enriched,acquisition_channel,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,age_group,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,category,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,cogs,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,color,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,customer_id,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,device_type,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,discount_amount,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,gender,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,has_promo,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,has_second_promo,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,line_cogs,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,line_discount_rate,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,line_list_revenue,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,line_margin,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,line_margin_pct,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,line_net_revenue,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,order_date,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,order_id,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,order_month,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,order_quarter,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,order_source,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,order_status,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,order_weekday,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,order_year,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,order_year_month,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,payment_method,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,price,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,product_id,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,product_name,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,quantity,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,refund_amount,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,return_rate_units,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,return_records,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,returned_flag,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,returned_units,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,review_count,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,reviewed_flag,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,segment,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,ship_city,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,ship_district,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,ship_region,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,size,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks
+order_items_enriched,unit_price,0,0.0,714669,Required analytical field; blanks should remain 0%.,No blanks

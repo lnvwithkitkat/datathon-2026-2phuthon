@@ -1,0 +1,247 @@
+﻿table_name,table_description,column_name,dtype,null_count,row_count
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",order_id,int64,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",order_date,datetime64[us],0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",customer_id,int64,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",zip,int64,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",order_status,str,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",payment_method,str,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",device_type,str,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",order_source,str,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",order_lines,int64,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",unique_products,int64,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",units,int64,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",item_net_revenue,float64,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",item_list_revenue,float64,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",item_cogs,float64,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",item_margin,float64,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",total_discount,float64,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",promo_line_count,int64,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",returned_units,float64,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",refund_amount,float64,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",return_records,float64,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",avg_rating,float64,535576,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",review_count,float64,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",has_promo,bool,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",order_margin_pct,float64,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",order_discount_rate,float64,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",dominant_category,str,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",dominant_segment,str,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",customer_zip,int64,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",customer_city,str,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",customer_signup_date,datetime64[us],0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",gender,str,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",age_group,str,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",acquisition_channel,str,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",ship_city,str,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",ship_region,str,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",ship_district,str,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",payment_value,float64,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",installments,int64,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",ship_date,datetime64[us],80878,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",delivery_date,datetime64[us],80878,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",shipping_fee,float64,80878,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",ship_delay_days,float64,80878,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",delivery_days,float64,80878,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",fulfillment_days,float64,80878,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",late_fulfillment_flag,object,80878,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",top_return_reason,str,610883,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",first_return_date,datetime64[us],610883,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",order_avg_rating,float64,535576,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",order_year,int32,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",order_quarter,int32,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",order_month,int32,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",order_month_name,str,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",order_year_month,str,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",order_weekday,str,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",order_day_of_week,int32,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",customer_tenure_days,int64,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",is_cancelled,bool,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",is_returned_status,bool,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",has_return_record,bool,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",is_cod,bool,0,646945
+orders_enriched,"Order-grain table with customer, geography, payment, fulfillment, revenue, margin, promotion, return, and review context.",risk_status,str,0,646945
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",order_id,int64,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",product_id,int64,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",quantity,int64,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",unit_price,float64,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",discount_amount,float64,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",promo_id,object,438353,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",promo_id_2,string,714463,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",product_name,str,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",category,str,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",segment,str,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",size,str,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",color,str,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",price,float64,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",cogs,float64,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",line_net_revenue,float64,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",line_list_revenue,float64,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",line_cogs,float64,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",line_margin,float64,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",line_margin_pct,float64,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",line_discount_rate,float64,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",has_promo,bool,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",has_second_promo,bool,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",promo_name,str,438353,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",promo_type,str,438353,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",discount_value,float64,438353,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",start_date,datetime64[us],438353,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",end_date,datetime64[us],438353,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",applicable_category,str,684814,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",promo_channel,str,438353,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",stackable_flag,float64,438353,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",min_order_value,float64,438353,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",return_records,float64,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",returned_units,float64,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",refund_amount,float64,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",top_return_reason,str,674730,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",first_return_date,datetime64[us],674730,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",review_count,float64,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",avg_rating,float64,601116,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",min_rating,float64,601116,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",top_review_title,str,601116,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",first_review_date,datetime64[us],601116,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",returned_flag,bool,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",reviewed_flag,bool,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",return_rate_units,float64,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",order_date,datetime64[us],0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",order_year,int32,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",order_quarter,int32,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",order_month,int32,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",order_year_month,str,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",order_weekday,str,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",customer_id,int64,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",ship_region,str,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",ship_city,str,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",ship_district,str,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",order_status,str,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",payment_method,str,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",device_type,str,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",order_source,str,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",gender,str,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",age_group,str,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",acquisition_channel,str,0,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",fulfillment_days,float64,89287,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",delivery_days,float64,89287,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",shipping_fee,float64,89287,714669
+order_items_enriched,"Line-item grain table with product, promotion, margin, return, review, and order context.",late_fulfillment_flag,object,89287,714669
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",date,datetime64[us],0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",sales_revenue,float64,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",sales_cogs,float64,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",year,int32,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",quarter,int32,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",month,int32,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",month_name,str,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",year_month,str,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",weekday,str,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",day_of_week,int32,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",sales_margin,float64,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",sales_margin_pct,float64,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",order_count,int64,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",cancelled_orders,int64,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",returned_orders,int64,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",item_net_revenue,float64,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",item_margin,float64,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",avg_order_value,float64,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",promo_order_share,float64,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",cod_order_share,float64,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",avg_fulfillment_days,float64,2,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",cancel_rate,float64,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",return_order_rate,float64,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",sessions,float64,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",unique_visitors,float64,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",page_views,float64,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",weighted_bounce_rate,float64,181,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",weighted_avg_session_duration_sec,float64,181,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",sales_revenue_rolling_7d,float64,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",sales_margin_rolling_7d,float64,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",sales_revenue_rolling_30d,float64,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",sales_margin_rolling_30d,float64,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",sales_revenue_rolling_90d,float64,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",sales_margin_rolling_90d,float64,0,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",orders_per_session,float64,181,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",revenue_per_session,float64,181,3833
+daily_kpi,"Daily official sales, order, web traffic, rolling trend, and conversion-proxy metrics.",page_views_per_session,float64,181,3833
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,snapshot_date,datetime64[us],0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,product_id,int64,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,stock_on_hand,int64,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,units_received,int64,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,units_sold,int64,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,stockout_days,int64,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,days_of_supply,float64,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,fill_rate,float64,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,stockout_flag,int64,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,overstock_flag,int64,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,reorder_flag,int64,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,sell_through_rate,float64,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,product_name,str,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,category,str,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,segment,str,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,year,int64,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,month,int64,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,snapshot_year,int32,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,snapshot_quarter,int32,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,snapshot_month,int32,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,snapshot_month_name,str,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,snapshot_year_month,str,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,snapshot_weekday,str,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,snapshot_day_of_week,int32,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,units_sold_3m_avg,float64,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,stockout_days_3m_avg,float64,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,median_days_supply,float64,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,median_sell_through,float64,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,median_units_3m,float64,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,stockout_pressure_score,float64,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,overstock_pressure_score,float64,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,inventory_quadrant,str,0,60247
+inventory_monthly,Product-month inventory table with risk quadrants and replenishment/markdown signals.,replenishment_priority,str,0,60247
+growth_forecast_monthly,Historical and six-month predictive EDA forecast using trend plus seasonality from sales.csv only.,date,datetime64[us],0,132
+growth_forecast_monthly,Historical and six-month predictive EDA forecast using trend plus seasonality from sales.csv only.,sales_revenue,float64,6,132
+growth_forecast_monthly,Historical and six-month predictive EDA forecast using trend plus seasonality from sales.csv only.,sales_cogs,float64,6,132
+growth_forecast_monthly,Historical and six-month predictive EDA forecast using trend plus seasonality from sales.csv only.,sales_margin,float64,6,132
+growth_forecast_monthly,Historical and six-month predictive EDA forecast using trend plus seasonality from sales.csv only.,sales_margin_pct,float64,6,132
+growth_forecast_monthly,Historical and six-month predictive EDA forecast using trend plus seasonality from sales.csv only.,month,int32,0,132
+growth_forecast_monthly,Historical and six-month predictive EDA forecast using trend plus seasonality from sales.csv only.,month_name,str,0,132
+growth_forecast_monthly,Historical and six-month predictive EDA forecast using trend plus seasonality from sales.csv only.,period_index,int64,0,132
+growth_forecast_monthly,Historical and six-month predictive EDA forecast using trend plus seasonality from sales.csv only.,forecast_revenue,float64,0,132
+growth_forecast_monthly,Historical and six-month predictive EDA forecast using trend plus seasonality from sales.csv only.,forecast_cogs,float64,0,132
+growth_forecast_monthly,Historical and six-month predictive EDA forecast using trend plus seasonality from sales.csv only.,forecast_margin,float64,0,132
+growth_forecast_monthly,Historical and six-month predictive EDA forecast using trend plus seasonality from sales.csv only.,forecast_margin_pct,float64,0,132
+growth_forecast_monthly,Historical and six-month predictive EDA forecast using trend plus seasonality from sales.csv only.,forecast_lower_revenue,float64,0,132
+growth_forecast_monthly,Historical and six-month predictive EDA forecast using trend plus seasonality from sales.csv only.,forecast_upper_revenue,float64,0,132
+growth_forecast_monthly,Historical and six-month predictive EDA forecast using trend plus seasonality from sales.csv only.,is_forecast,bool,0,132
+growth_forecast_monthly,Historical and six-month predictive EDA forecast using trend plus seasonality from sales.csv only.,signal_type,str,0,132
+growth_forecast_monthly,Historical and six-month predictive EDA forecast using trend plus seasonality from sales.csv only.,forecast_method,str,0,132
+seasonality_indices,Month-of-year and weekday indices for likely peak/soft periods.,grain,str,0,19
+seasonality_indices,Month-of-year and weekday indices for likely peak/soft periods.,period_number,int32,0,19
+seasonality_indices,Month-of-year and weekday indices for likely peak/soft periods.,period_name,str,0,19
+seasonality_indices,Month-of-year and weekday indices for likely peak/soft periods.,seasonality_index,float64,0,19
+seasonality_indices,Month-of-year and weekday indices for likely peak/soft periods.,season_type,str,0,19
+seasonality_indices,Month-of-year and weekday indices for likely peak/soft periods.,avg_daily_revenue,float64,0,19
+seasonality_indices,Month-of-year and weekday indices for likely peak/soft periods.,avg_daily_margin_pct,float64,7,19
+predictive_signals,"Risk and opportunity signals for promotion, payment, returns, inventory, and channels.",signal_type,str,0,62
+predictive_signals,"Risk and opportunity signals for promotion, payment, returns, inventory, and channels.",entity_grain,str,0,62
+predictive_signals,"Risk and opportunity signals for promotion, payment, returns, inventory, and channels.",entity,str,0,62
+predictive_signals,"Risk and opportunity signals for promotion, payment, returns, inventory, and channels.",current_value,float64,0,62
+predictive_signals,"Risk and opportunity signals for promotion, payment, returns, inventory, and channels.",baseline_value,float64,0,62
+predictive_signals,"Risk and opportunity signals for promotion, payment, returns, inventory, and channels.",expected_direction,str,0,62
+predictive_signals,"Risk and opportunity signals for promotion, payment, returns, inventory, and channels.",risk_score,float64,0,62
+predictive_signals,"Risk and opportunity signals for promotion, payment, returns, inventory, and channels.",estimated_impact_vnd,float64,30,62
+predictive_signals,"Risk and opportunity signals for promotion, payment, returns, inventory, and channels.",recommended_action,str,0,62
+predictive_signals,"Risk and opportunity signals for promotion, payment, returns, inventory, and channels.",evidence,str,0,62
+predictive_signals,"Risk and opportunity signals for promotion, payment, returns, inventory, and channels.",priority,category,0,62
+recommendations,"CEO-facing action table linking risk signals to owners, tradeoffs, and recommended actions.",action_id,str,0,16
+recommendations,"CEO-facing action table linking risk signals to owners, tradeoffs, and recommended actions.",dashboard_page,str,0,16
+recommendations,"CEO-facing action table linking risk signals to owners, tradeoffs, and recommended actions.",decision_owner,str,0,16
+recommendations,"CEO-facing action table linking risk signals to owners, tradeoffs, and recommended actions.",signal_type,str,0,16
+recommendations,"CEO-facing action table linking risk signals to owners, tradeoffs, and recommended actions.",entity_grain,str,0,16
+recommendations,"CEO-facing action table linking risk signals to owners, tradeoffs, and recommended actions.",entity,str,0,16
+recommendations,"CEO-facing action table linking risk signals to owners, tradeoffs, and recommended actions.",priority,category,0,16
+recommendations,"CEO-facing action table linking risk signals to owners, tradeoffs, and recommended actions.",risk_score,float64,0,16
+recommendations,"CEO-facing action table linking risk signals to owners, tradeoffs, and recommended actions.",estimated_impact_vnd,float64,6,16
+recommendations,"CEO-facing action table linking risk signals to owners, tradeoffs, and recommended actions.",recommended_action,str,0,16
+recommendations,"CEO-facing action table linking risk signals to owners, tradeoffs, and recommended actions.",tradeoff,str,0,16
+recommendations,"CEO-facing action table linking risk signals to owners, tradeoffs, and recommended actions.",evidence,str,0,16
+dashboard_kpis,Small metric-definition table for dashboard KPI strips.,kpi_name,str,0,13
+dashboard_kpis,Small metric-definition table for dashboard KPI strips.,kpi_value,float64,0,13
+dashboard_kpis,Small metric-definition table for dashboard KPI strips.,metric_definition,str,0,13

@@ -1,0 +1,62 @@
+table_name,column_name,blank_count,blank_pct,row_count,null_policy,status
+orders_enriched,first_return_date,610883,0.9442580126594996,646945,Expected null when order has no return record; keep as null date.,Expected sparse event field
+orders_enriched,top_return_reason,610883,0.9442580126594996,646945,Expected null when order has no return record; use No return record label in BI visuals.,Expected sparse event field
+orders_enriched,avg_rating,535576,0.8278539906792695,646945,Expected null when order has no review; keep numeric null or use No review label separately.,Expected sparse event field
+orders_enriched,order_avg_rating,535576,0.8278539906792695,646945,Expected null when order has no review; keep numeric null or use No review label separately.,Expected sparse event field
+orders_enriched,delivery_date,80878,0.1250152640487213,646945,Expected null for orders not delivered/cancelled; investigate non-cancelled shipped/delivered anomalies if needed.,Expected sparse event field
+orders_enriched,delivery_days,80878,0.1250152640487213,646945,Expected null when no shipment row exists; keep numeric null.,Expected sparse event field
+orders_enriched,fulfillment_days,80878,0.1250152640487213,646945,Expected null when no shipment row exists; keep numeric null.,Expected sparse event field
+orders_enriched,late_fulfillment_flag,80878,0.1250152640487213,646945,Expected null when no shipment row exists; use Not shipped / No shipment label for visuals.,Expected sparse event field
+orders_enriched,ship_date,80878,0.1250152640487213,646945,Expected null for orders not yet shipped/cancelled; investigate non-cancelled shipped/delivered anomalies if needed.,Expected sparse event field
+orders_enriched,ship_delay_days,80878,0.1250152640487213,646945,Expected null when no shipment row exists; keep numeric null.,Expected sparse event field
+orders_enriched,shipping_fee,80878,0.1250152640487213,646945,Expected null when no shipment row exists; keep numeric null or coalesce only in display logic.,Expected sparse event field
+orders_enriched,acquisition_channel,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,age_group,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,customer_city,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,customer_id,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,customer_signup_date,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,customer_tenure_days,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,customer_zip,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,device_type,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,dominant_category,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,dominant_segment,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,gender,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,has_promo,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,has_return_record,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,installments,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,is_cancelled,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,is_cod,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,is_returned_status,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,item_cogs,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,item_list_revenue,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,item_margin,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,item_net_revenue,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,order_date,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,order_day_of_week,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,order_discount_rate,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,order_id,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,order_lines,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,order_margin_pct,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,order_month,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,order_month_name,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,order_quarter,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,order_source,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,order_status,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,order_weekday,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,order_year,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,order_year_month,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,payment_method,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,payment_value,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,promo_line_count,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,refund_amount,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,return_records,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,returned_units,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,review_count,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,risk_status,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,ship_city,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,ship_district,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,ship_region,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,total_discount,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,unique_products,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,units,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks
+orders_enriched,zip,0,0.0,646945,Required analytical field; blanks should remain 0%.,No blanks

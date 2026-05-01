@@ -1,0 +1,129 @@
+{
+  "project": "vindatathon-2026-task2-tableau",
+  "deliverable": "LaTeX-ready fully rendered figure pack",
+  "generated_at_utc": "2026-04-27T13:38:50.012307+00:00",
+  "rendering_engine": "Python + Pillow + ReportLab",
+  "figure_size_px": [
+    3200,
+    1800
+  ],
+  "dpi": 300,
+  "source_extract_dir": "D:\\Code\\Coding\\data-visualization-skills\\projects\\vindatathon-2026-task2-tableau\\docs\\assets\\exports\\tableau",
+  "source_files": [
+    "dashboard_kpis.csv",
+    "daily_kpi.csv",
+    "growth_forecast_monthly.csv",
+    "seasonality_indices.csv",
+    "recommendations.csv",
+    "orders_enriched.csv",
+    "order_items_enriched.csv",
+    "inventory_monthly.csv"
+  ],
+  "guardrails": [
+    "Part 2 historical data only",
+    "No sales_test.csv",
+    "No sample_submission.csv",
+    "No baseline.ipynb",
+    "Predictive charts are EDA signals, not Kaggle submission forecasts"
+  ],
+  "files": [
+    {
+      "file": "01_executive_scorecard.png",
+      "bytes": 195055,
+      "sha256": "ca4fd1f29dc386c1f1dcdaa60fca739449372f11996edf5e0b4c4b0e829863b3",
+      "width": 3200,
+      "height": 1800,
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    {
+      "file": "02_predictive_growth_seasonality.png",
+      "bytes": 192527,
+      "sha256": "c25212669251632de8c25b6fe221bfff6016230f27f97f56c47959f60f8185c7",
+      "width": 3200,
+      "height": 1800,
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    {
+      "file": "03_profit_promotion_leakage.png",
+      "bytes": 199659,
+      "sha256": "562fb064920b9dc327f2a937687260bbfd6c0cbf08d552b5c35b2ea6616c9813",
+      "width": 3200,
+      "height": 1800,
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    {
+      "file": "04_payment_channel_risk.png",
+      "bytes": 183124,
+      "sha256": "870dac693bda5f43ca43997df865503b34725cb200a9ea04c0de0e91b223a96a",
+      "width": 3200,
+      "height": 1800,
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    {
+      "file": "05_returns_fulfillment_cx.png",
+      "bytes": 167892,
+      "sha256": "0c5ae667832a6e774d942c4891eaaf1e2825e47769afbd563afd7bd9e94c8bef",
+      "width": 3200,
+      "height": 1800,
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    {
+      "file": "06_inventory_quadrant_actions.png",
+      "bytes": 215512,
+      "sha256": "d3706323b6eed108934a505dfe7afe4cf0aa70b557489f9546cff8e8ca3e57f8",
+      "width": 3200,
+      "height": 1800,
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    {
+      "file": "07_data_model_validation.png",
+      "bytes": 143876,
+      "sha256": "44082ce856ed3ac92f7f35b830fb1f50db1c21e350f56cb13b4343a17faf9aa5",
+      "width": 3200,
+      "height": 1800,
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    {
+      "file": "08_prescriptive_action_roadmap.png",
+      "bytes": 209225,
+      "sha256": "16f3476751be59b2850dcd4e0b12931652ac332c1fa7ee097c3b664e60feac1f",
+      "width": 3200,
+      "height": 1800,
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    {
+      "file": "VinDatathon_Task2_LaTeX_Figure_Pack.pdf",
+      "bytes": 1818899,
+      "sha256": "d1b4f1ffbe1e0ee8d1b5cbbc8b296b2157f2d3eef426e584d6807d4e2d89f87f"
+    },
+    {
+      "file": "latex_include_figures.tex",
+      "bytes": 2096,
+      "sha256": "0aacf1444842c05032e17b5319a818ebc795f561356f1de48c5dfd33df2770ed"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+node_modules/
+coverage/
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+
+projects/*/.netlify/
+projects/*/.cache/
+projects/*/dist/
+projects/*/build/
+projects/*/.python-version
+projects/*/.venv/
+projects/.smoke/
+projects/smoke-*/

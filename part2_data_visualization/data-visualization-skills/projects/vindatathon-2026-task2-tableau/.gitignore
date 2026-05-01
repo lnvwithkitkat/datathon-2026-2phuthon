@@ -1,0 +1,21 @@
+# Project-local GitHub safety rules.
+# Keep source code, docs, small validated summaries, and final rendered figures.
+# Keep large generated/binary artifacts out of normal Git commits unless using Git LFS.
+
+# Large generated extracts over GitHub's normal file limit.
+docs/assets/exports/tableau/orders_enriched.csv
+docs/assets/exports/tableau/order_items_enriched.csv
+
+# Large Tableau package generated for local file-out workflow.
+docs/assets/workbook/VinDatathon_Task2_Tableau_Fileout_Package.zip
+
+# Manual BI binaries: use Git LFS or GitHub Releases if you need to share these.
+docs/assets/powerbi/*.pbix
+docs/assets/powerbi/*.pbit
+docs/assets/powerbi/*.pbip/
+docs/assets/workbook/*.twbx
+
+# Local inspection/cache artifacts.
+docs/assets/workbook/_inspect_world_indicators/
+*.tmp
+~$*
